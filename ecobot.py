@@ -4,7 +4,7 @@ import random
 
 intents = discord.Intents.default()
 intents.message_content = True
-bot = commands.Bot(command_prefix="/", intents=intents)
+bot = commands.Bot(command_prefix=".", intents=intents)
 
 
 # Evento: quando o bot estiver pronto
@@ -64,7 +64,7 @@ async def info(ctx):
     )
     embed.add_field(
         name="Funcionalidades disponíveis:",
-        value="\n/reciclomando\n/reciclopedia\n/info",
+        value="\n.reciclomando\n.reciclopedia\n.info",
         inline=False
     )
     embed.set_footer(text="Criado durante a aula de programação!")
